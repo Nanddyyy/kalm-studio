@@ -184,22 +184,22 @@ export default function KALMLanding() {
             </div>
             
             {/* Navigation Actions */}
-            <div className="flex items-center gap-x-8 lg:gap-x-12">
-              <button className="text-neutral-400 hover:text-white transition-colors text-xs tracking-widest font-light">
+            <div className="flex items-center gap-x-4 sm:gap-x-6 lg:gap-x-8">
+              <button className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light">
                 COLLECTION
               </button>
-              <button className="text-neutral-400 hover:text-white transition-colors text-xs tracking-widest font-light">
+              <button className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light">
                 CUSTOM STUDIO
               </button>
               <button 
                 onClick={() => setIsCartOpen(true)}
-                className="text-neutral-400 hover:text-white transition-colors text-xs tracking-widest font-light"
+                className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light"
               >
                 CART ({cart.length})
               </button>
               <button 
                 onClick={() => window.open('https://wa.me/6285864800386?text=Halo%20KALM%20Studio%2C%20saya%20tertarik%20untuk%20memesan%20produk%20boxy%20fit%20KALM.', '_blank')}
-                className="px-5 py-2.5 bg-white text-black font-semibold text-xs tracking-widest rounded-none hover:bg-neutral-200 transition-colors uppercase whitespace-nowrap"
+                className="px-4 sm:px-5 py-2 sm:py-2.5 bg-white text-black font-semibold text-xs sm:text-sm tracking-widest rounded-none hover:bg-neutral-200 transition-colors uppercase whitespace-nowrap"
               >
                 ORDER VIA WHATSAPP
               </button>
@@ -219,13 +219,13 @@ export default function KALMLanding() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="mb-12">
-              <h1 className="text-7xl md:text-9xl font-serif text-white tracking-[0.2em] mb-4">KALM</h1>
-              <p className="text-neutral-400 text-lg md:text-xl tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
+              <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-[0.2em] mb-4">KALM</h1>
+              <p className="text-base md:text-lg tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
             </div>
             
-            <div className="mb-20">
-              <h2 className="text-4xl md:text-5xl font-light text-white mb-8 leading-tight">The Art of Premium Comfort</h2>
-              <p className="text-neutral-300 text-lg md:text-xl mb-16 max-w-4xl mx-auto leading-relaxed">
+            <div className="mb-16 md:mb-20">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 md:mb-8 leading-tight">The Art of Premium Comfort</h2>
+              <p className="text-neutral-300 text-base md:text-lg mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
                 Experience the perfect blend of comfort and style with our heavyweight cotton combed 20s. 
                 Each piece is meticulously crafted to provide exceptional comfort while maintaining a sophisticated, minimalist aesthetic.
               </p>
@@ -285,7 +285,7 @@ export default function KALMLanding() {
           
           {/* Editorial Product Grid */}
           <div className="w-full max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
               {productsData.map((product) => (
                 <div key={product.id} className="group relative overflow-hidden rounded-xl w-full">
                   {/* Editorial Product Image */}
