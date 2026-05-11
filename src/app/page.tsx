@@ -309,57 +309,11 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="w-full p-4 sm:p-5 bg-neutral-900/50 backdrop-blur-sm flex flex-col items-start text-left" 
-                       style={{ textAlign: 'left', alignItems: 'flex-start', display: 'flex', flexDirection: 'column', width: '100%' }}>
-                    
-                    {/* Nama Produk & Harga */}
-                    <div className="w-full flex flex-col items-start text-left mb-3 sm:mb-4">
-                      <h3 className="text-white font-light text-sm sm:text-base cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
-                          onClick={() => setSelectedProduct(product)}>
-                        {product.name}
-                      </h3>
-                      <p className="text-neutral-400 text-[11px] sm:text-xs tracking-wider mt-1">
-                        Premium Series • Rp {product.price.toLocaleString('id-ID')}
-                      </p>
-                    </div>
-
-                    {/* Pilihan Ukuran */}
-                    <div className="w-full mb-3 sm:mb-4 text-left">
-                      <p className="text-neutral-400 text-[11px] sm:text-xs mb-1 sm:mb-2">Pilih Ukuran:</p>
-                      <div className="flex justify-start space-x-1 sm:space-x-2">
-                        {['S', 'M', 'L', 'XL'].map((size) => (
-                          <button
-                            key={size}
-                            onClick={() => {
-                              const productId = `product-${product.id}`;
-                              setSelectedSizes({
-                                ...selectedSizes,
-                                [productId]: size
-                              });
-                            }}
-                            className={`px-2.5 py-1.5 text-[10px] sm:text-xs rounded-lg border transition-colors ${
-                              selectedSizes[`product-${product.id}`] === size
-                                ? 'bg-emerald-600 text-white border-emerald-600'
-                                : 'bg-neutral-800 text-neutral-300 border-neutral-700 hover:bg-neutral-700'
-                            }`}
-                          >
-                            {size}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Deskripsi Produk (DIPERBAIKI JADI RATA KIRI) */}
-                    <div className="w-full text-left">
-                      <p className="text-neutral-300 text-[11px] sm:text-xs leading-relaxed">
-                        {product.description || "KALM Heavyweight Boxy Tee — Sage Green"}
-                      </p>
-                      <div className="flex items-center justify-start space-x-2 mt-1 sm:mt-1.5">
-                        <span className="text-neutral-500 text-[10px] sm:text-[11px]">Heavyweight Cotton Combed 20s</span>
-                        <ChevronRight className="w-3 h-3 text-neutral-600" />
-                      </div>
-                    </div>
-
+                  <div className="w-full p-3 bg-neutral-900/50 backdrop-blur-sm flex flex-col items-start text-left">
+                    <h3 className="text-white font-light text-sm sm:text-base cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
+                        onClick={() => setSelectedProduct(product)}>
+                      {product.name}
+                    </h3>
                   </div>
                 </div>
               ))}
