@@ -285,9 +285,9 @@ export default function KALMLanding() {
           
           {/* Editorial Product Grid */}
           <div className="w-full max-w-5xl mx-auto px-2 sm:px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 justify-items-center">
               {productsData.map((product) => (
-                <div key={product.id} className="group relative overflow-hidden rounded-xl w-full">
+                <div key={product.id} className="group relative overflow-hidden rounded-xl w-full mx-auto">
                   {/* Editorial Product Image */}
                   <div 
                     className="aspect-[3/4] sm:aspect-[4/5] max-h-[300px] sm:max-h-[350px] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
