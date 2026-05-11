@@ -375,9 +375,9 @@ export default function KALMLanding() {
                     </div>
                     
                     <div className="text-center">
-                      <p className="text-neutral-300 text-sm leading-relaxed">Frame {product.id} - Heavyweight Cotton Combed 20s</p>
+                      <p className="text-neutral-300 text-sm leading-relaxed">KALM Heavyweight Boxy Tee — {product.color}</p>
                       <div className="flex items-center justify-center space-x-4 mt-2">
-                        <span className="text-neutral-500 text-xs">Crafted with precision</span>
+                        <span className="text-neutral-500 text-xs">Heavyweight Cotton Combed 20s</span>
                         <ChevronRight className="w-4 h-4 text-neutral-600" />
                       </div>
                     </div>
