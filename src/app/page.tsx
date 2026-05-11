@@ -269,28 +269,28 @@ export default function KALMLanding() {
       <div className="h-12 sm:h-16 lg:h-20 bg-neutral-950"></div>
 
       {/* 35mm Mockup Showcase */}
-      <section className="w-full bg-neutral-950 py-16 sm:py-24 lg:py-32 px-6 sm:px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-y-16 md:gap-y-24">
+      <section className="w-full bg-neutral-950 py-12 sm:py-16 lg:py-24 px-8 sm:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-y-12 md:gap-y-16">
           
           {/* Header Container */}
-          <div className="text-center max-w-3xl mx-auto space-y-6">
-            <h2 className="text-3xl md:text-4xl font-light text-white tracking-widest uppercase">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white tracking-widest uppercase">
               KALM Studio - 35mm Film Archive
             </h2>
-            <p className="text-neutral-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed tracking-wide">
+            <p className="text-neutral-400 text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed tracking-wide">
               Our design philosophy captured in premium 35mm film photography. 
               Each frame tells a story of craftsmanship, attention to detail, and the pursuit of perfection.
             </p>
           </div>
           
           {/* Editorial Product Grid */}
-          <div className="w-full max-w-5xl mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="w-full max-w-5xl mx-auto px-2 sm:px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
               {productsData.map((product) => (
                 <div key={product.id} className="group relative overflow-hidden rounded-xl w-full">
                   {/* Editorial Product Image */}
                   <div 
-                    className="aspect-[3/4] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="aspect-[3/4] sm:aspect-[4/5] max-h-[300px] sm:max-h-[350px] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
                     onClick={() => setSelectedProduct(product)}
                   >
                     <Image 
@@ -309,16 +309,16 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="p-8 bg-neutral-900/50 backdrop-blur-sm">
-                    <div className="flex items-start justify-between mb-6">
+                  <div className="p-4 sm:p-6 bg-neutral-900/50 backdrop-blur-sm">
+                    <div className="flex items-start justify-between mb-3 sm:mb-4">
                       <div className="text-left">
                         <h3 
-                          className="text-white font-light text-lg cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
+                          className="text-white font-light text-base sm:text-lg cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
                           onClick={() => setSelectedProduct(product)}
                         >
                           {product.name}
                         </h3>
-                        <p className="text-neutral-400 text-xs tracking-wider mt-1">Premium Series • Rp {product.price.toLocaleString('id-ID')}</p>
+                        <p className="text-neutral-400 text-xs sm:text-sm tracking-wider mt-1">Premium Series • Rp {product.price.toLocaleString('id-ID')}</p>
                       </div>
                       <button
                         onClick={() => {
@@ -349,9 +349,9 @@ export default function KALMLanding() {
                     </div>
                     
                     {/* Size Selection */}
-                    <div className="mb-4 text-center">
-                      <p className="text-neutral-400 text-sm mb-2">Pilih Ukuran:</p>
-                      <div className="flex justify-center space-x-2">
+                    <div className="mb-2 sm:mb-3 text-center">
+                      <p className="text-neutral-400 text-xs sm:text-sm mb-1 sm:mb-2">Pilih Ukuran:</p>
+                      <div className="flex justify-center space-x-1 sm:space-x-2">
                         {['S', 'M', 'L', 'XL'].map((size) => (
                           <button
                             key={size}
@@ -375,10 +375,10 @@ export default function KALMLanding() {
                     </div>
                     
                     <div className="text-center">
-                      <p className="text-neutral-300 text-sm leading-relaxed">KALM Heavyweight Boxy Tee — {product.color}</p>
-                      <div className="flex items-center justify-center space-x-4 mt-2">
+                      <p className="text-neutral-300 text-xs sm:text-sm leading-relaxed">KALM Heavyweight Boxy Tee — {product.color}</p>
+                      <div className="flex items-center justify-center space-x-2 sm:space-x-4 mt-1 sm:mt-2">
                         <span className="text-neutral-500 text-xs">Heavyweight Cotton Combed 20s</span>
-                        <ChevronRight className="w-4 h-4 text-neutral-600" />
+                        <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 text-neutral-600" />
                       </div>
                     </div>
                   </div>
