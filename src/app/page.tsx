@@ -336,25 +336,6 @@ export default function KALMLanding() {
               Our Ultimate Boxy Fit combines the best of both worlds - premium comfort with contemporary design.
             </p>
           </div>
-          
-          
-          <div className="max-w-4xl mx-auto text-center justify-center items-center px-4" style={{ paddingTop: '60px sm:80px md:120px' }}>
-            <div className="grid md:grid-cols-2 gap-12 sm:gap-16 md:gap-24 justify-items-center">
-              <div className="flex flex-col items-center text-center mx-auto">
-                <h3 className="text-xs sm:text-sm md:text-3xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 tracking-[0.05em] text-center">Cotton Combed 20s</h3>
-                <p className="text-neutral-300 leading-relaxed max-w-lg text-[11px] sm:text-xs md:text-base text-center">
-                  Maximum comfort, minimal stretch. The premium choice for those who prioritize all-day wearability without sacrificing style.
-                </p>
-              </div>
-              
-              <div className="flex flex-col items-center text-center mx-auto">
-                <h3 className="text-xs sm:text-sm md:text-3xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 tracking-[0.05em] text-center">The Ultimate Boxy Fit</h3>
-                <p className="text-neutral-300 leading-relaxed max-w-lg text-[11px] sm:text-xs md:text-base text-center">
-                  Contemporary design meets premium comfort. Clean lines, modern fit, exceptional comfort - perfect balance.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
