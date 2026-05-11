@@ -309,7 +309,7 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="w-full p-3 bg-neutral-900/50 backdrop-blur-sm flex flex-col items-start text-left">
+                  <div className="w-full pt-3 pb-1 text-left">
                     <h3 className="text-white font-light text-sm sm:text-base cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
                         onClick={() => setSelectedProduct(product)}>
                       {product.name}
