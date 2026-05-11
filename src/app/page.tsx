@@ -746,7 +746,7 @@ export default function KALMLanding() {
           onClick={() => setSelectedProduct(null)}
         >
           <div 
-            className="w-full max-w-lg md:max-w-2xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl p-6 md:p-8 relative"
+            className="w-full max-w-md md:max-w-xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl p-4 md:p-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
@@ -773,9 +773,9 @@ export default function KALMLanding() {
               </div>
               <div className="flex flex-col justify-between">
                 <div className="space-y-3">
-                  <h2 className="text-xl md:text-3xl font-medium text-white tracking-tight">{selectedProduct.name}</h2>
-                  <p className="text-emerald-400 text-sm md:text-base font-medium mb-3">Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
-                  <p className="text-neutral-300 text-sm md:text-base leading-relaxed mb-4">{selectedProduct.description}</p>
+                  <h2 className="text-lg md:text-xl font-medium text-white tracking-tight">{selectedProduct.name}</h2>
+                  <p className="text-emerald-400 text-xs md:text-sm font-medium mb-3">Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
+                  <p className="text-neutral-300 text-xs md:text-sm leading-relaxed mb-4">{selectedProduct.description}</p>
                 </div>
                 <div className="space-y-3">
                   <div>
@@ -791,7 +791,7 @@ export default function KALMLanding() {
                               [productId]: size
                             });
                           }}
-                          className={`w-8 h-8 md:w-10 md:h-10 text-xs md:text-sm rounded-lg border transition-colors ${
+                          className={`w-7 h-7 md:w-9 md:h-9 text-xs rounded-lg border transition-colors ${
                             selectedSizes[`product-${selectedProduct.id}`] === size
                               ? 'bg-emerald-600 text-white border-emerald-600'
                               : 'bg-neutral-800/40 text-neutral-300 border-neutral-700/50 hover:bg-neutral-700/60'
