@@ -290,7 +290,7 @@ export default function KALMLanding() {
                 <div key={product.id} className="group relative overflow-hidden rounded-xl w-full mx-auto">
                   {/* Editorial Product Image */}
                   <div 
-                    className="aspect-[3/4] sm:aspect-[4/5] max-h-[300px] sm:max-h-[350px] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
+                    className="aspect-[3/4] sm:aspect-[4/5] max-h-[300px] sm:max-h-[350px] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105 mx-auto"
                     onClick={() => setSelectedProduct(product)}
                   >
                     <Image 
@@ -309,7 +309,7 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="w-full pt-3 pb-1 text-left">
+                  <div className="w-full pt-3 pb-1 text-center mx-auto">
                     <h3 className="text-white font-light text-sm sm:text-base cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
                         onClick={() => setSelectedProduct(product)}>
                       {product.name}
