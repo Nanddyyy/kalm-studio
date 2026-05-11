@@ -746,7 +746,7 @@ export default function KALMLanding() {
           onClick={() => setSelectedProduct(null)}
         >
           <div 
-            className="w-full max-w-md md:max-w-xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl p-4 md:p-6 relative"
+            className="w-full max-w-md md:max-w-xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl pl-2 pr-4 pt-4 pb-4 md:pl-3 md:pr-6 md:pt-6 md:pb-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
@@ -772,12 +772,12 @@ export default function KALMLanding() {
                 />
               </div>
               <div className="flex flex-col justify-between">
-                <div className="space-y-3">
+                <div className="space-y-3 text-left">
                   <h2 className="text-white font-medium tracking-tight" style={{ fontSize: '14px' }}>{selectedProduct.name}</h2>
                   <p className="text-emerald-400 font-medium mb-3" style={{ fontSize: '11px' }}>Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
                   <p className="text-neutral-300 leading-relaxed mb-4" style={{ fontSize: '11px' }}>{selectedProduct.description}</p>
                 </div>
-                <div className="space-y-3">
+                <div className="space-y-3 text-left">
                   <div>
                     <span className="text-neutral-400 block mb-1" style={{ fontSize: '11px' }}>Pilih Ukuran:</span>
                     <div className="flex space-x-1 md:space-x-2">
