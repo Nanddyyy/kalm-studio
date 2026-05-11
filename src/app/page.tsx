@@ -773,13 +773,13 @@ export default function KALMLanding() {
               </div>
               <div className="flex flex-col justify-between">
                 <div className="space-y-3">
-                  <h2 className="text-sm md:text-lg font-medium text-white tracking-tight !important">{selectedProduct.name}</h2>
-                  <p className="text-emerald-400 text-[10px] md:text-xs font-medium mb-3 !important">Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
-                  <p className="text-neutral-300 text-[10px] md:text-xs leading-relaxed mb-4 !important">{selectedProduct.description}</p>
+                  <h2 className="text-white font-medium tracking-tight" style={{ fontSize: '14px' }}>{selectedProduct.name}</h2>
+                  <p className="text-emerald-400 font-medium mb-3" style={{ fontSize: '11px' }}>Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
+                  <p className="text-neutral-300 leading-relaxed mb-4" style={{ fontSize: '11px' }}>{selectedProduct.description}</p>
                 </div>
                 <div className="space-y-3">
                   <div>
-                    <span className="text-neutral-400 text-[10px] md:text-xs block mb-1 !important">Pilih Ukuran:</span>
+                    <span className="text-neutral-400 block mb-1" style={{ fontSize: '11px' }}>Pilih Ukuran:</span>
                     <div className="flex space-x-1 md:space-x-2">
                       {['S', 'M', 'L', 'XL'].map((size) => (
                         <button
@@ -791,11 +791,12 @@ export default function KALMLanding() {
                               [productId]: size
                             });
                           }}
-                          className={`w-7 h-7 md:w-8 md:h-8 text-[10px] rounded-lg border transition-colors !important ${
+                          className={`w-7 h-7 md:w-8 md:h-8 rounded-lg border transition-colors ${
                             selectedSizes[`product-${selectedProduct.id}`] === size
                               ? 'bg-emerald-600 text-white border-emerald-600'
                               : 'bg-neutral-800/40 text-neutral-300 border-neutral-700/50 hover:bg-neutral-700/60'
                           }`}
+                          style={{ fontSize: '10px' }}
                         >
                           {size}
                         </button>
