@@ -772,15 +772,15 @@ export default function KALMLanding() {
                 />
               </div>
               <div className="flex flex-col justify-between">
-                <div>
-                  <h2 className="text-3xl font-light text-white mb-2">{selectedProduct.name}</h2>
-                  <p className="text-emerald-400 text-xl font-bold mb-6">Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
-                  <p className="text-neutral-300 leading-relaxed mb-6">{selectedProduct.description}</p>
+                <div className="space-y-3">
+                  <h2 className="text-xl md:text-3xl font-medium text-white tracking-tight">{selectedProduct.name}</h2>
+                  <p className="text-emerald-400 text-sm md:text-base font-medium mb-3">Premium Series • Rp {selectedProduct.price.toLocaleString('id-ID')}</p>
+                  <p className="text-neutral-300 text-sm md:text-base leading-relaxed mb-4">{selectedProduct.description}</p>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <div>
-                    <span className="text-neutral-400 text-sm block mb-2">Pilih Ukuran:</span>
-                    <div className="flex space-x-2">
+                    <span className="text-neutral-400 text-xs md:text-sm block mb-1">Pilih Ukuran:</span>
+                    <div className="flex space-x-1 md:space-x-2">
                       {['S', 'M', 'L', 'XL'].map((size) => (
                         <button
                           key={size}
@@ -791,10 +791,10 @@ export default function KALMLanding() {
                               [productId]: size
                             });
                           }}
-                          className={`px-4 py-2 rounded-lg border transition-colors ${
+                          className={`w-8 h-8 md:w-10 md:h-10 text-xs md:text-sm rounded-lg border transition-colors ${
                             selectedSizes[`product-${selectedProduct.id}`] === size
                               ? 'bg-emerald-600 text-white border-emerald-600'
-                              : 'bg-neutral-800 text-neutral-300 border-neutral-700 hover:bg-neutral-700'
+                              : 'bg-neutral-800/40 text-neutral-300 border-neutral-700/50 hover:bg-neutral-700/60'
                           }`}
                         >
                           {size}
