@@ -209,23 +209,23 @@ export default function KALMLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen sm:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 via-neutral-800 to-neutral-900 opacity-90"></div>
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761351-9e2c?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center bg-no-repeat opacity-20"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-transparent via-neutral-900/50 to-transparent opacity-90"></div>
         </div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
-            <div className="mb-12">
-              <h1 className="text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-[0.2em] mb-4">KALM</h1>
-              <p className="text-base md:text-lg tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
+            <div className="mb-8 sm:mb-12">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-[0.2em] mb-3 sm:mb-4">KALM</h1>
+              <p className="text-sm sm:text-base md:text-lg tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
             </div>
             
-            <div className="mb-16 md:mb-20">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-white mb-6 md:mb-8 leading-tight">The Art of Premium Comfort</h2>
-              <p className="text-neutral-300 text-base md:text-lg mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
+            <div className="mb-12 sm:mb-16 md:mb-20">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 sm:mb-6 md:mb-8 leading-tight">The Art of Premium Comfort</h2>
+              <p className="text-neutral-300 text-sm sm:text-base md:text-lg mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
                 Experience the perfect blend of comfort and style with our heavyweight cotton combed 20s. 
                 Each piece is meticulously crafted to provide exceptional comfort while maintaining a sophisticated, minimalist aesthetic.
               </p>
@@ -431,10 +431,10 @@ export default function KALMLanding() {
       <div className="h-16 sm:h-24 bg-neutral-900"></div>
 
       {/* Footer */}
-      <footer className="bg-neutral-950 border-t border-neutral-800 py-16">
+      <footer className="bg-neutral-950 border-t border-neutral-800 py-8 sm:py-12">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex flex-col items-center text-center">
           <div>
-            <p className="text-neutral-500 text-sm tracking-[0.05em]">© 2026 KALM Premium. All rights reserved.</p>
+            <p className="text-neutral-500 text-xs sm:text-sm tracking-[0.05em]">© 2026 KALM Premium. All rights reserved.</p>
           </div>
         </div>
       </footer>
