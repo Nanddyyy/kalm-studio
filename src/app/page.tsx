@@ -309,7 +309,7 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="w-full p-4 sm:p-6 bg-neutral-900/50 backdrop-blur-sm">
+                  <div className="w-full p-4 sm:p-6 bg-neutral-900/50 backdrop-blur-sm" style={{ textAlign: 'left', alignItems: 'flex-start', display: 'flex', flexDirection: 'column', width: '100%' }}>
                     <div className="flex flex-col items-start text-left mb-3 sm:mb-4">
                       <div className="w-full text-left">
                         <h3 
