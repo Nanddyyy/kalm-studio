@@ -309,9 +309,9 @@ export default function KALMLanding() {
                   </div>
                   
                   {/* Editorial Product Details */}
-                  <div className="p-4 sm:p-6 bg-neutral-900/50 backdrop-blur-sm">
-                    <div className="flex items-start justify-between mb-3 sm:mb-4">
-                      <div className="text-left">
+                  <div className="w-full p-4 sm:p-6 bg-neutral-900/50 backdrop-blur-sm">
+                    <div className="flex flex-col items-start text-left mb-3 sm:mb-4">
+                      <div className="w-full text-left">
                         <h3 
                           className="text-white font-light text-base sm:text-lg cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
                           onClick={() => setSelectedProduct(product)}
@@ -349,9 +349,9 @@ export default function KALMLanding() {
                     </div>
                     
                     {/* Size Selection */}
-                    <div className="mb-2 sm:mb-3 text-center">
+                    <div className="mb-2 sm:mb-3 text-left">
                       <p className="text-neutral-400 text-xs sm:text-sm mb-1 sm:mb-2">Pilih Ukuran:</p>
-                      <div className="flex justify-center space-x-1 sm:space-x-2">
+                      <div className="flex justify-start space-x-1 sm:space-x-2">
                         {['S', 'M', 'L', 'XL'].map((size) => (
                           <button
                             key={size}
