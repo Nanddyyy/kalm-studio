@@ -316,7 +316,7 @@ export default function KALMLanding() {
                           className="text-white font-light text-base sm:text-lg cursor-pointer hover:text-emerald-400 transition-colors tracking-wide"
                           onClick={() => setSelectedProduct(product)}
                         >
-                          {product.name}
+                          TES LOKASI BENAR
                         </h3>
                         <p className="text-neutral-400 text-xs sm:text-sm tracking-wider mt-1">Premium Series • Rp {product.price.toLocaleString('id-ID')}</p>
                       </div>
