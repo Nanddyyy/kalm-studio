@@ -778,9 +778,9 @@ export default function KALMLanding() {
                   <p className="text-neutral-300 leading-relaxed mb-4" style={{ fontSize: '11px' }}>{selectedProduct.description}</p>
                 </div>
                 <div className="space-y-3 text-left">
-                  <div>
+                  <div className="text-left">
                     <span className="text-neutral-400 block mb-1" style={{ fontSize: '11px' }}>Pilih Ukuran:</span>
-                    <div className="flex space-x-1 md:space-x-2">
+                    <div className="flex space-x-1 md:space-x-2 justify-start">
                       {['S', 'M', 'L', 'XL'].map((size) => (
                         <button
                           key={size}
