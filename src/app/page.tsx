@@ -230,36 +230,34 @@ export default function KALMLanding() {
                 Each piece is meticulously crafted to provide exceptional comfort while maintaining a sophisticated, minimalist aesthetic.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center mb-8 sm:mb-16">
-                <button className="group flex items-center space-x-3 px-8 py-4 bg-white text-neutral-900 rounded-full font-medium transition-all duration-300 hover:bg-neutral-100 hover:scale-105">
-                  <span className="text-lg">Explore Collection</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
-                <button 
-                  onClick={() => setIsCustomStudioOpen(true)}
-                  className="group flex items-center space-x-3 px-8 py-4 bg-purple-600 text-white rounded-full font-medium transition-all duration-300 hover:bg-purple-500 hover:scale-105"
-                >
-                  <span className="text-lg">Design Your Own</span>
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
-                <button 
-                  onClick={() => window.open('https://wa.me/6285864800386?text=Halo%20KALM%20Studio%2C%20saya%20tertarik%20untuk%20memesan%20produk%20boxy%20fit%20KALM.', '_blank')}
-                  className="group flex items-center space-x-3 px-8 py-4 bg-white text-black rounded-full font-medium transition-all duration-300 hover:bg-neutral-200 hover:scale-105"
-                >
-                  <span className="text-lg">Order via WhatsApp</span>
-                </button>
-                <button 
-                  onClick={() => setIsCartOpen(true)}
-                  className="group flex items-center space-x-3 px-8 py-4 bg-neutral-800 text-white rounded-full font-medium transition-all duration-300 hover:bg-neutral-700 hover:scale-105 relative"
-                >
-                  <span className="text-lg">Keranjang ({cart.length})</span>
-                  {cart.length > 0 && (
-                    <span className="absolute -top-1 -right-1 w-2 h-2 bg-emerald-500 rounded-full text-xs text-white flex items-center justify-center">
-                      {cart.length}
-                    </span>
-                  )}
-                </button>
-              </div>
+              <div className="flex flex-wrap sm:flex-row gap-1.5 sm:gap-4 justify-center mb-6 sm:mb-16 px-4">
+  {/* Explore Collection */}
+  <button className="group flex items-center space-x-1.5 sm:space-x-3 px-3.5 py-2 sm:px-8 sm:py-4 bg-white text-neutral-900 rounded-full font-medium transition-all duration-300 hover:bg-neutral-100 hover:scale-105">
+    <span className="text-[11px] sm:text-lg">Explore Collection</span>
+    <ArrowRight className="w-3 h-3 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+  </button>
+
+  {/* Design Your Own */}
+  <button onClick={() => setIsCustomStudioOpen(true)} className="group flex items-center space-x-1.5 sm:space-x-3 px-3.5 py-2 sm:px-8 sm:py-4 bg-purple-600 text-white rounded-full font-medium transition-all duration-300 hover:bg-purple-500 hover:scale-105">
+    <span className="text-[11px] sm:text-lg">Design Your Own</span>
+    <ArrowRight className="w-3 h-3 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
+  </button>
+
+  {/* Order via WhatsApp */}
+  <button onClick={() => window.open('https://wa.me/6285864800386?text=Halo%20KALM%20Studio%2C%20saya%20tertarik%20untuk%20memesan%20produk%20boxy%20fit%20KALM.', '_blank')} className="group flex items-center space-x-1.5 sm:space-x-3 px-3.5 py-2 sm:px-8 sm:py-4 bg-white text-black rounded-full font-medium transition-all duration-300 hover:bg-neutral-200 hover:scale-105">
+    <span className="text-[11px] sm:text-lg">Order via WhatsApp</span>
+  </button>
+
+  {/* Keranjang */}
+  <button onClick={() => setIsCartOpen(true)} className="group flex items-center space-x-1.5 sm:space-x-3 px-3.5 py-2 sm:px-8 sm:py-4 bg-neutral-800 text-white rounded-full font-medium transition-all duration-300 hover:bg-neutral-700 hover:scale-105 relative">
+    <span className="text-[11px] sm:text-lg">Keranjang ({cart.length})</span>
+    {cart.length > 0 && (
+      <span className="absolute -top-1 -right-1 w-2 h-2 bg-emerald-500 rounded-full text-xs text-white flex items-center justify-center">
+        {cart.length}
+      </span>
+    )}
+  </button>
+</div>
             </div>
           </div>
         </div>
