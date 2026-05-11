@@ -180,26 +180,26 @@ export default function KALMLanding() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
-              <h1 className="text-xl font-light text-white tracking-widest">KALM</h1>
+              <h1 className="text-lg md:text-xl font-light text-white tracking-widest">KALM</h1>
             </div>
             
             {/* Navigation Actions */}
-            <div className="flex items-center gap-x-4 sm:gap-x-6 lg:gap-x-8">
-              <button className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light">
+            <div className="flex items-center gap-x-2 sm:gap-x-4 md:gap-x-6 lg:gap-x-8">
+              <button className="text-neutral-400 hover:text-white transition-colors text-[11px] sm:text-xs md:text-sm tracking-widest font-light whitespace-nowrap">
                 COLLECTION
               </button>
-              <button className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light">
+              <button className="text-neutral-400 hover:text-white transition-colors text-[11px] sm:text-xs md:text-sm tracking-widest font-light whitespace-nowrap">
                 CUSTOM STUDIO
               </button>
               <button 
                 onClick={() => setIsCartOpen(true)}
-                className="text-neutral-400 hover:text-white transition-colors text-xs sm:text-sm tracking-widest font-light"
+                className="text-neutral-400 hover:text-white transition-colors text-[11px] sm:text-xs md:text-sm tracking-widest font-light whitespace-nowrap"
               >
                 CART ({cart.length})
               </button>
               <button 
                 onClick={() => window.open('https://wa.me/6285864800386?text=Halo%20KALM%20Studio%2C%20saya%20tertarik%20untuk%20memesan%20produk%20boxy%20fit%20KALM.', '_blank')}
-                className="px-4 sm:px-5 py-2 sm:py-2.5 bg-white text-black font-semibold text-xs sm:text-sm tracking-widest rounded-none hover:bg-neutral-200 transition-colors uppercase whitespace-nowrap"
+                className="px-2 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-white text-black font-semibold text-[11px] sm:text-xs md:text-sm tracking-widest rounded-none hover:bg-neutral-200 transition-colors uppercase whitespace-nowrap"
               >
                 ORDER VIA WHATSAPP
               </button>
