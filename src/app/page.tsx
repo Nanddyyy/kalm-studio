@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, ChevronRight, Upload } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 const productsData = [
   {
@@ -289,10 +290,17 @@ export default function KALMLanding() {
                 <div key={product.id} className="group relative overflow-hidden rounded-xl w-full">
                   {/* Editorial Product Image */}
                   <div 
-                    className="aspect-[3/4] bg-cover bg-center bg-no-repeat relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
-                    style={{ backgroundImage: `url(${product.image})` }}
+                    className="aspect-[3/4] relative overflow-hidden cursor-pointer transition-transform duration-700 ease-out group-hover:scale-105"
                     onClick={() => setSelectedProduct(product)}
                   >
+                    <Image 
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                      priority={false}
+                    />
                                         {/* Film Frame Effect */}
                     <div className="absolute inset-x-4 inset-y-4 border border-white/10 rounded-lg"></div>
                     <div className="absolute inset-x-6 inset-y-6 border border-white/5 rounded-lg"></div>
@@ -744,10 +752,14 @@ export default function KALMLanding() {
               &times;
             </button>
             <div className="grid md:grid-cols-2 gap-8">
-              <div 
-                className="aspect-square bg-cover bg-center bg-no-repeat rounded-xl"
-                style={{ backgroundImage: `url(${selectedProduct.image})` }}
-              ></div>
+              <Image 
+                src={selectedProduct.image}
+                alt={selectedProduct.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                priority={false}
+              />
               <div className="flex flex-col justify-between">
                 <div>
                   <h2 className="text-3xl font-light text-white mb-2">{selectedProduct.name}</h2>
