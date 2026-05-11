@@ -218,19 +218,19 @@ export default function KALMLanding() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center">
-            <div className="mb-8 sm:mb-12">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif text-white tracking-[0.2em] mb-3 sm:mb-4">KALM</h1>
-              <p className="text-sm sm:text-base md:text-lg tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
+            <div className="mb-4 sm:mb-8 md:mb-12">
+              <h1 className="text-2xl sm:text-4xl md:text-7xl lg:text-9xl font-serif text-white tracking-[0.2em] mb-2 sm:mb-4">KALM</h1>
+              <p className="text-xs sm:text-sm md:text-lg tracking-[0.1em]">Heavyweight Boxy Garments. Crafted for Comfort.</p>
             </div>
             
-            <div className="mb-12 sm:mb-16 md:mb-20">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white mb-4 sm:mb-6 md:mb-8 leading-tight">The Art of Premium Comfort</h2>
-              <p className="text-neutral-300 text-sm sm:text-base md:text-lg mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
+            <div className="mb-6 sm:mb-12 md:mb-16 md:mb-20">
+              <h2 className="text-lg sm:text-2xl md:text-4xl lg:text-5xl font-light text-white mb-2 sm:mb-4 md:mb-6 md:mb-8 leading-tight">The Art of Premium Comfort</h2>
+              <p className="text-neutral-300 text-[11px] sm:text-sm md:text-lg mb-4 sm:mb-8 md:mb-12 md:mb-16 max-w-4xl mx-auto leading-relaxed">
                 Experience the perfect blend of comfort and style with our heavyweight cotton combed 20s. 
                 Each piece is meticulously crafted to provide exceptional comfort while maintaining a sophisticated, minimalist aesthetic.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center mb-8 sm:mb-16">
                 <button className="group flex items-center space-x-3 px-8 py-4 bg-white text-neutral-900 rounded-full font-medium transition-all duration-300 hover:bg-neutral-100 hover:scale-105">
                   <span className="text-lg">Explore Collection</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -329,29 +329,29 @@ export default function KALMLanding() {
       <div className="h-16 sm:h-24 bg-gradient-to-b from-neutral-800 to-neutral-900"></div>
 
       {/* Fabric Philosophy Section */}
-      <section className="py-32 px-6 sm:px-8 lg:px-12 bg-neutral-900">
+      <section className="py-16 sm:py-24 md:py-32 px-6 sm:px-8 lg:px-12 bg-neutral-900">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center">
-          <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-light text-white mb-8 tracking-[0.05em]">The Ultimate Boxy Fit</h2>
-            <p className="text-neutral-400 text-lg mb-40 md:mb-48 max-w-5xl mx-auto leading-relaxed">
+          <div className="mb-6 sm:mb-8 md:mb-12">
+            <h2 className="text-lg sm:text-2xl md:text-5xl font-light text-white mb-4 sm:mb-6 md:mb-8 tracking-[0.05em]">The Ultimate Boxy Fit</h2>
+            <p className="text-neutral-400 text-[11px] sm:text-sm md:text-lg mb-20 sm:mb-32 md:mb-40 md:mb-48 max-w-5xl mx-auto leading-relaxed">
               Why choose between comfort and style when you can have both? 
               Our Ultimate Boxy Fit combines the best of both worlds - premium comfort with contemporary design.
             </p>
           </div>
           
           
-          <div className="max-w-4xl mx-auto text-center justify-center items-center px-4" style={{ paddingTop: '120px' }}>
-            <div className="grid md:grid-cols-2 gap-24 justify-items-center">
+          <div className="max-w-4xl mx-auto text-center justify-center items-center px-4" style={{ paddingTop: '60px sm:80px md:120px' }}>
+            <div className="grid md:grid-cols-2 gap-12 sm:gap-16 md:gap-24 justify-items-center">
               <div className="flex flex-col items-center text-center mx-auto">
-                <h3 className="text-3xl font-semibold text-white mb-6 tracking-[0.05em] text-center">Cotton Combed 20s</h3>
-                <p className="text-neutral-300 leading-relaxed max-w-lg text-base text-center">
+                <h3 className="text-xs sm:text-sm md:text-3xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 tracking-[0.05em] text-center">Cotton Combed 20s</h3>
+                <p className="text-neutral-300 leading-relaxed max-w-lg text-[11px] sm:text-xs md:text-base text-center">
                   Maximum comfort, minimal stretch. The premium choice for those who prioritize all-day wearability without sacrificing style.
                 </p>
               </div>
               
               <div className="flex flex-col items-center text-center mx-auto">
-                <h3 className="text-3xl font-semibold text-white mb-6 tracking-[0.05em] text-center">The Ultimate Boxy Fit</h3>
-                <p className="text-neutral-300 leading-relaxed max-w-lg text-base text-center">
+                <h3 className="text-xs sm:text-sm md:text-3xl font-semibold text-white mb-3 sm:mb-4 md:mb-6 tracking-[0.05em] text-center">The Ultimate Boxy Fit</h3>
+                <p className="text-neutral-300 leading-relaxed max-w-lg text-[11px] sm:text-xs md:text-base text-center">
                   Contemporary design meets premium comfort. Clean lines, modern fit, exceptional comfort - perfect balance.
                 </p>
               </div>
