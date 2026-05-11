@@ -741,25 +741,36 @@ export default function KALMLanding() {
 
       {/* Detail Modal */}
       {selectedProduct && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
-          {/* Spacer untuk jarak dari navbar */}
-          <div className="h-20 sm:h-28"></div>
-          <div className="bg-neutral-900 border border-white/10 rounded-2xl max-w-4xl w-full p-8 relative">
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80"
+          onClick={() => setSelectedProduct(null)}
+        >
+          <div 
+            className="w-full max-w-lg md:max-w-2xl max-h-[90vh] overflow-y-auto bg-neutral-900 border border-white/10 rounded-2xl p-6 md:p-8 relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
             <button
               onClick={() => setSelectedProduct(null)}
-              className="absolute top-4 right-4 text-neutral-400 hover:text-white text-2xl"
+              className="absolute top-4 right-4 z-50 p-2 text-white bg-black/50 hover:bg-black/80 rounded-full transition-colors"
             >
-              &times;
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Image 
-                src={selectedProduct.image}
-                alt={selectedProduct.name}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
-                priority={false}
-              />
+            
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              {/* Product Image Container */}
+              <div className="relative aspect-[3/4] md:aspect-square">
+                <Image 
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                  fill
+                  className="object-cover rounded-lg"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw"
+                  priority={true}
+                />
+              </div>
               <div className="flex flex-col justify-between">
                 <div>
                   <h2 className="text-3xl font-light text-white mb-2">{selectedProduct.name}</h2>
